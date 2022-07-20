@@ -24,14 +24,16 @@ The apt package manager.
 Perform all the commands as root user or sudo user.
 
 ### Clone the Repository on your Master and worker nodes
+```
 apt install git 
 git clone https://github.com/jassi-devops/k8s-cluster-ubuntu.git
-
+```
 ### Install Docker, Docker-engine, Kubeadm, kubectl
+```
 cd k8s-cluster-ubuntu/
 chmod +x *
 ./setup_k8s_cluster.sh
-
+```
 ## Run only on Master node
 ./k8s_master.sh
 
