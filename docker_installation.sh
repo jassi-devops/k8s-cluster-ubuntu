@@ -1,14 +1,14 @@
 #!/bin/bash
 
 echo "========== Step1: Uninstall old versions🔗 =========="
-sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sleep 5
 echo ""
 echo ""
 
 echo "========== Step2: Set up the repository =========="
 sudo apt-get update
-sudo apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release wget
 
 sleep 5
 echo ""
