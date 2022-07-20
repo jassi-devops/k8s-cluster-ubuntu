@@ -35,6 +35,7 @@ chmod +x *
 ./setup_k8s_cluster.sh
 ```
 ## Run only on Master node
+```
 ./k8s_master.sh
-
+```
 After completion of this script you will get the kubeadm token which you have to run on your worker nodes to communicate with master node.
