@@ -21,3 +21,11 @@ client_token=$(cat kubeadm.log | tail -2)
 echo ""
 echo -e "\nYou can join any number of worker nodes by running the following on each as root: \n$client_token"
 
+
+wget https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+kubectl apply -f kube-flannel.yml
+sleep 30
+
+kubectl get nodes
+
+echo -e "\nYou can join any number of worker nodes by running the following on each as root: \n$client_token"
