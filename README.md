@@ -1,4 +1,4 @@
-# Install Kubernetes Cluster using kubeadm
+# Install Kubernetes Cluster with Flannel on Ubuntu
 ```
 Follow this documentation to set up a Kubernetes cluster on ubuntu 18.04/20.04/22.04.
 
