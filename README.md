@@ -17,9 +17,10 @@ This documentation guides you in setting up a cluster with one master node and m
 
 #### Software Requirement:   
 ```
-1. 2 or more ubuntu 18.04/20.04/22.04 servers 
-2. Access to a sudo or root privileged user account on each device 
-3. The apt package manager. 
+1. Kubernetes Version < 1.20 
+2. Two or more ubuntu 18.04/20.04/22.04 servers 
+3. Access to a sudo or root privileged user account on each device 
+4. The apt package manager. 
 ```
 ## Run On both master and worker
 Perform all the commands as root user or sudo user.
