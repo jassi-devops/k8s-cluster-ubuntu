@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo swapoff -a
 until [ "$list" = "0" ]
 do
 read -r -p "Press [yY] if you want to list all the available kubernetes version else [nN] for Next step:  " list
