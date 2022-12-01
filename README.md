@@ -17,7 +17,7 @@ This documentation guides you in setting up a cluster with one master node and m
 
 #### Software Requirement:   
 ```
-1. Kubernetes Version < 1.20 
+1. Any Kubernetes Version 
 2. Two or more ubuntu 18.04/20.04/22.04 servers 
 3. Access to a sudo or root privileged user account on each device 
 4. The apt package manager. 
@@ -30,13 +30,13 @@ Perform all the commands as root user or sudo user.
 apt install git 
 git clone https://github.com/jassi-devops/k8s-cluster-ubuntu.git
 ```
-#### Install Docker, Docker-engine, kubelet, Kubeadm, kubectl
+#### Install kubelet, Kubeadm, kubectl and containerd on Both Master/Worker Nodes.
 ```
 cd k8s-cluster-ubuntu/
 chmod +x *
-./setup_k8s_cluster.sh
+./install_prerequisites.sh
 ```
-## Run only on Master node
+## Run only on Master node to initiatize the kubernetes cluster
 ```
 ./k8s_master.sh
 ```
