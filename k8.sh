@@ -15,12 +15,11 @@ case $list in
 		sudo apt-mark hold kubelet kubeadm kubectl
 		exit 1;;
         [nN])
-                echo "Enter the Kubernetes version that you want to install:"
-                read K8SVERSION
+                sudo apt -y install curl apt-transport-https
 		curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 		echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-		sudo apt-get update -q
-		sudo apt-get install -y kubelet=$K8SVERSION kubectl=$K8SVERSION kubeadm=$K8SVERSION
+		sudo apt-get update
+		sudo apt-get install -y kubelet kubectl kubeadm
 		sudo apt-mark hold kubelet kubeadm kubectl
                 exit 1;;
         *)
