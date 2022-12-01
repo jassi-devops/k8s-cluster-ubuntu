@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt -y full-upgrade
+
 echo "========== Step1: Uninstall old versions🔗 =========="
 sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sleep 5
