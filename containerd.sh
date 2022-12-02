@@ -43,3 +43,5 @@ sudo systemctl restart containerd
 sudo systemctl enable containerd
 sudo systemctl enable kubelet
 
+rm -rf /etc/containerd/config.toml
+
